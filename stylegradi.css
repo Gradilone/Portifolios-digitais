@@ -149,7 +149,7 @@ section button:hover{
   justify-content: center;
 }
 
-.card-button {
+#card-button {
   display: flex;
   justify-content: center;
   margin: 20px;
