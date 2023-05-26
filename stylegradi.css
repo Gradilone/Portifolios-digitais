@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 /* INITIALS */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Jost', sans-serif;
-  position: relative;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-image:url(./imgsGradi/FundoGradi.webp);
   background-repeat: repeat;
@@ -22,13 +9,7 @@ body {
   /* overflow-y: hidden; */
 }
 
-body::-webkit-scrollbar {
-  width: 6px;
-}
-body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: lightgray; 
-}
+
 
 main {
   width: 1120px;
@@ -100,9 +81,9 @@ h2 > span {
   text-align: justify;
 }
 
-section button {
+#bnt-interno{
   border: none;
-  width: 150px;
+  width: 170px;
   padding: 10px;
   background-color: #7700ff;
   color: white;
@@ -134,6 +115,10 @@ section button:hover{
   animation: float 5s ease-in-out infinite;
   box-shadow: 0 10px 10px;
   border-radius: 50%;
+}
+
+#on {
+  opacity: 0;
 }
 
 .all-cards {

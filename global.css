@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    position: relative;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgray; 
+  }

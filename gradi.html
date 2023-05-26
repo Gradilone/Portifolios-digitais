@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,8 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   <link rel="stylesheet" href="stylegradi.css">
+  <link rel="stylesheet" href="global.css">
+
   <title>Site</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
     </div>
     <div class="menu">
       <nav class="nav-list">
-          <a href="#">Home</a>
+          <a href="home.html">Home</a>
           <a href="#cartas">Cartas</a>
           <a href="#outros">Outros</a>
       </nav>
@@ -53,12 +55,12 @@
     <section id="cartas">
       <h2 class="card-title">Descubra os meus gostos<h2>
         <div id="card-button">
-          <button>
+          <button id="bnt-interno">
             Abrir meu deck
           </button>   
         </div>
 
-        <div class="all-cards">
+        <div id="on" class="all-cards">
 
           <div class="card-container">
             <div class="card">
@@ -95,13 +97,6 @@
 
         </div>
 
-         
-
-          
-          
-    
-
-      
     </section>
     <!--OUTROS-->
     <section id="outros">
