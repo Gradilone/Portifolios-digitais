@@ -23,3 +23,7 @@ bntArirDeck.addEventListener("click", function exibirCards () {
 
 
 
+
+
+
+

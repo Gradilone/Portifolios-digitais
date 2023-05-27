@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="sluli.css">
+  <title>Site</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      LOGO
+    </div>
+    <div class="menu">
+      <nav class="nav-list">
+        <a href="home.html">Home</a>
+        <a href="#cartas">Cartas</a>
+        <a href="#outros">Outros</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="home-img">
+        <img src="./imgsLuli/luli.jpeg" alt="Foto de perfil">
+      </div>
+
+      <div class="home-info">
+        <h2>Olá, eu sou o Luli!</h2>
+        <span class="home-position">Designer Gráfico e amante de insetos</span>
+        <span class="home-resume">
+         Meus amigos me consideram muito lacre. Tenho um senso de estilo único e não passo despercebido nos lugares. Sou formado em design e amo coisas relacionadas do tipo. Adoro música e estou sempre dançando por ai!
+        </span>
+
+      </div>
+    </section>
+
+    <!--CARTAS-->
+    <section id="cartas">
+
+      <h2 class="card-title">Descubra os meus gostos<h2></h2>
+
+          <div class="container-slider">
+
+            <div class="next-slider">
+              <button id="next-button">
+                <img src="./imgsLuli/seta-esquerda.png" alt="next-button" />
+              </button>
+            </div>
+
+            <div class="container-cards">
+
+              <div class="container-images slider on ">
+                <div class="card vira">
+                  <img src="./imgsLuli/CARD1.png">  
+                </div>
+              </div>
+
+              <div class="container-images slider">
+                <div class="card ">
+                  <img src="./imgsLuli/CARD2.png">
+                </div>
+              </div>
+
+              <div class="container-images  slider">
+                <div class="card">
+                  <img src="./imgsLuli/CARD3.png">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="prev-slider">
+              <button id="prev-button">
+                <img src="./imgsLuli/seta-direita.png" alt="prev" />
+              </button>
+            </div>
+
+          </div>
+
+    </section>
+    <!--OUTROS-->
+    <section id="outros">
+      <h2 class="outros-text">Connheça os outros integrantes</h2>
+      <div class="integrantes">
+        <span id="luli"></span>
+        <div >
+          <div>
+            <img class="membros" id="gradi" src="./imgsGradi/eu2.jpeg" alt="foto do gradi">
+          </div>
+          <div class="int-nome">Gradi</div>
+        </div>
+        
+        <div>
+          <div>
+            <img class="membros" id="luisa" src="./imgsGradi/Luisa.jpeg" alt="foto da luisa"></div>
+          <div class="int-nome">Luisa</div>
+        </div>  
+  
+        <div>
+          <div>
+            <img class="membros" id="thiago" src="./imgsGradi/thigas.jpg" alt="foto do thiago">
+          </div>
+          <div class="int-nome">Thiago</div>
+        </div>  
+
+      </div>
+      </section>
+  </main>
+
+  <footer> copyright © 2023 Lucas Garcia. Todos os direitos reservados</footer>
+
+  <script src="luli.js" defer></script>
+  <script src="paginas.js" defer></script>
+</body>

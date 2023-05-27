@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+/* INITIALS */
+html {
+  font-family: Be Vietnam Pro, sans-serif;
+}
+body {
+  background-image:url(./imgsLu/bg.png);
+  background-size: cover;
+  color: #fff;
+  /* overflow-y: hidden; */
+}
+
+
+
+main {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  height: 80px;
+  z-index: 999;
+  max-width: 1120px;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* HOME */
+
+section#home {
+  height: 500px;
+  margin-top: 50px;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 20px;
+  width: 100%;
+  /* background-color: black; */
+
+
+}
+
+section#cartas {
+  margin-top: 50px;
+
+}
+
+section#outros {
+  margin-top: 150px;
+
+}
+
+
+h2 {
+ font-size: 2.5rem;
+ font-style: italic;
+ font-weight: 900;
+
+}
+
+.home-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: justify;
+  line-height: 150%;
+}
+
+#bnt-interno{
+  border: none;
+  width: 180px;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+section button a{
+  color: white;
+}
+
+section button:hover{
+  opacity: 1;
+}
+
+#luisa {
+  display: none;
+}
+
+.home-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.home-img img {
+  width: 300px;
+  height: 300px;
+  object-fit:cover;
+  animation: float 5s ease-in-out infinite;
+  box-shadow: 0 10px 10px;
+  border-radius: 50%;
+}
+
+#on {
+  opacity: 0;
+}
+
+.all-cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#card-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card {
+  width: 285px;
+  height: 450px;
+  border: 10px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+footer{
+  box-shadow: 0px -1px 0px 0px #ececec;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  text-align: center;
+}
+
+.outros-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px
+
+}
+
+.membros {
+  width:150px;
+  height: 150px;
+  background-color: #7700ff;
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+}
+
+.membros img {
+  object-fit: cover;
+}
+
+.integrantes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+
+}
+
+.int-nome {
+  padding: 23px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* FOOTER */
+
+/* footer {
+  box-shadow: 0px -1px 0px 0px #ececec;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+} */
+
+/* MOBILE */
+
+@media (max-width: 450px) {
+  header {
+    justify-content: center;
+  }
+  
+  .logo {
+    display: none;
+  }
+
+  section#home {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .home-info, .home-img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .swiper-slide {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+ 
+  .project-info {
+    width: 80%;
+  }
+}

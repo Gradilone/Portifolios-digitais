@@ -1,4 +1,7 @@
 const btnGradi = document.querySelector("#gradi");
+const btnLuli = document.querySelector("#luli");
+const btnLuisa = document.querySelector("#luisa");
+const btnThiago = document.querySelector("#thiago");
 
 btnGradi.addEventListener("click", function mudarPag () {
     window.location.href = 'gradi.html';    

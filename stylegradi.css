@@ -62,6 +62,10 @@ section#home {
 
 }
 
+#gradi {
+  display: none;
+}
+
 section#cartas {
   margin-top: 50px;
 
