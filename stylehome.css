@@ -36,11 +36,12 @@ main {
   .membros {
     width:150px;
     height: 150px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #7700ff;
     border-radius: 50%;
     animation: float 5s ease-in-out infinite;
+  }
+
+  .membros img {
+    object-fit: cover;
   }
   
   .integrantes {
@@ -48,7 +49,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 5rem;
+    gap: 8rem;
   
   }
   
