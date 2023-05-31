@@ -6,6 +6,7 @@ const Thiago = document.querySelector("#thiago");
 const linkGradi = "gradi.html";
 const linkLuli = "luli.html";
 const linkLuisa = "luisa.html";
+const linkThiago = "thiago.html";
 
 const btn = document.createElement('button');
 
@@ -57,6 +58,21 @@ Luisa.addEventListener('mouseleave',function () {
 Luisa.addEventListener('click',function () {
     mudarPag(linkLuisa);
 });
+
+Thiago.addEventListener('mouseenter',function () {
+    focaAlvo(Thiago, 0.8, btn, entrou );
+   
+});
+
+Thiago.addEventListener('mouseleave',function () {
+    focaAlvo(Thiago, 1, btn, saiu);
+    
+});
+
+Thiago.addEventListener('click',function () {
+    mudarPag(linkThiago);
+});
+
 
 
 function mudarPag (link) {

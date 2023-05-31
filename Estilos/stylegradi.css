@@ -6,7 +6,7 @@ html {
 
 /* INITIALS */
 body {
-  background-image:url(./imgsGradi/FundoGradi.webp);
+  background-image: url(/Imagens/imgsGradi/FundoGradi.webp);
   background-repeat: repeat;
   background-size: cover;
   color: #fff;
@@ -44,6 +44,12 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+}
+
+a:hover {
+  border-bottom: 4px solid rgb(80, 224, 145);
+  color: rgb(80, 224, 145);
+  transition: 200ms;
 }
 
 /* HOME */
